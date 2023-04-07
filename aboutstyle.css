@@ -1,0 +1,150 @@
+body{
+    background:rgb(4, 27, 8) ;
+}
+
+/*container class r kaj*/
+.container{
+    display: grid;/*grid system akare hobe*/
+    height:100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*fractional unit akare kaj krbe*/
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.8fr;/*fractional unit akare kaj krbe*/
+    grid-template-areas: "navbar  navbar navbar navbar" /*upore nav 4ta column dokhol koreche*/
+                         "sidebar main   main   main"  /*sidebar 1ta col & main 3ta col niyeche*/
+                         "sidebar box1   box2   box3"  /*sidebar 1ta col & box 3ta 3ta col niyeche*/
+                         "sidebar footer footer footer" /*sidebar 1ta col & footer 3ta col niyeche*/
+}
+
+/*upore About Bangladesh Army nav bar r kaj*/
+.nav{
+   background: rgb(2, 33, 15) ;
+   color:rgb(239, 224, 14);
+   padding :30px;
+   font-size: 20px;
+   border: 2px solid black;
+   text-align: center;
+   grid-area: navbar;/*nav cls ti j name e niyeche grid-area*/
+}
+
+/*Role Of Bangladesh Army main cls r kaj*/
+.main{
+   background: rgb(2, 33, 15) ;
+   color:rgb(162, 162, 17);
+   padding :30px;
+   font-size: 20px;
+   border: 2px solid black;
+   grid-area: main; /*main cls ti j name e niyeche grid-area*/
+}
+
+/*main cls r p tag r kaj*/
+.main p{
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(208, 215, 201);
+}
+
+/*main cls r moddhe list r kaj*/
+.main ul li{
+    font-size: 16px;
+    font-weight: 500;
+    color:rgb(208, 215, 201);
+}
+
+/*Achievement and Contribution sidebar cls r kaj*/
+.sidebar{
+   background: rgb(2, 33, 15) ;
+   color:rgb(162, 162, 17);
+   padding :30px;
+   font-size: 20px;
+   border: 2px solid black;
+   grid-area: sidebar;/*sidebar cls ti j name e niyeche grid-area*/
+}
+
+/*sidebar cls r p tag r kaj*/
+.sidebar p{
+   color:rgb(208, 215, 201);
+}
+
+/*box1 class r kaj*/
+.box1{
+   background: rgb(2, 33, 15);
+   color:rgb(162, 162, 17);
+   padding :30px;
+   font-size: 20px;
+   border: 2px solid black;
+   grid-area: box1;/*box1 cls ti j name e niyeche grid-area*/
+}
+
+/*box1 r p tag r kaj*/
+.box1 p{
+    font-size: 13px;
+    font-weight: 500;
+    color:rgb(208, 215, 201);
+}
+
+/*box2 class r kaj*/
+.box2{
+    background: rgb(2, 33, 15);
+    color:rgb(162, 162, 17);
+    padding :30px;
+    font-size: 20px;
+    border: 2px solid black;
+    grid-area: box2;/*box2 cls ti j name e niyeche grid-area*/
+ }
+
+/*box2 r p tag r kaj*/
+ .box2 p{
+     font-size: 13px;
+     font-weight: 500;
+     color:rgb(208, 215, 201);
+ }
+
+ /*box3 class r kaj*/
+ .box3{
+    background: rgb(2, 33, 15);
+    color:rgb(162, 162, 17);
+    padding :30px;
+    font-size: 20px;
+    border: 2px solid black;
+    grid-area: box3;/*box3 cls ti j name e niyeche grid-area*/
+ }
+
+/*box3 r p tag r kaj*/
+ .box3 p{
+     font-size: 13px;
+     font-weight: 500;
+     color:rgb(208, 215, 201);
+ }
+
+ /*niche footer section r kaj*/
+ footer{
+   background: rgb(2, 33, 15)  ;
+   color:rgb(162, 162, 17);
+   padding :20px;
+   font-size: 27px;
+   border: 2px solid black;
+   grid-area: footer;/*footer section ti j name e niyeche grid-area*/
+}
+
+/*footer r p tag r kaj*/
+footer p{
+    font-size: 23px;
+    font-weight: 500;
+    color:rgb(208, 215, 201);
+}
+
+/*puro container jokhon responsive hobe*/
+@media only screen and (max-width:640px)
+
+{
+    .container{
+        grid-template-columns: 1fr;/*ektai column dekhabe */
+        grid-template-rows:0.2fr 2fr 1.5fr 1fr 1fr 1fr 0.9fr; /*total 7ta row r jnno*/
+        grid-template-areas: "navbar"/*prothome nav cls thakbe*/
+                             "main"  /*erpor main cls thakbe*/
+                            "sidebar" /*erpor sidebar cls thakbe*/
+                            "box1"    /*erpor box1 cls thakbe*/
+                            "box2"    /*erpor box2 cls thakbe*/
+                            "box3"    /*erpor box3 cls thakbe*/
+                            "footer"; /*erpor footer section thakbe*/
+    }
+}

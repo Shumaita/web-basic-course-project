@@ -1,0 +1,477 @@
+body {
+    background-color: rgb(9, 20, 1);
+    margin: 0;
+    padding: 0;
+}
+/*start section*/
+/*uporer chobir div*/
+.header {
+    width: 100%;/*purotai ashar jonno*/
+}
+
+.header img {
+    width: 100%;/*puro chobi tai ashar jonno*/
+}
+
+/*menu-bar er div class tar kaj*/
+.menu-bar {
+    background: rgba(20, 58, 15, 0.762);
+    text-align: center;
+    color: rgb(239, 224, 14);
+    height:60px;
+    padding:10px 6px 10px 6px;/*upor dane niche baye bristiti hobe*/
+}
+
+/*menu-bar unorder list tar kaj*/
+.menu-bar ul {
+    display: flex;/*pashapashi menu bar gulo anar jonno eta na dile niche porpor ashbe*/
+    list-style-type: none;/*disc type shoranor jnno*/
+}
+
+/*menu-bar unorder list er moddhe list tar kaj*/
+.menu-bar ul li {
+    width: 180px;
+    height: 10px;
+    margin: auto;
+    padding:9px;
+}
+
+/*menu-bar unorder list list er moddhe a tag er elementgulor tar kaj*/
+.menu-bar ul li a {
+    text-decoration: none;
+    color: rgb(239, 224, 14);
+}
+
+/*menu-bar unorder list list er moddhe a tag er elementgulo jokhon hover hobe*/
+.menu-bar ul li a:hover {
+    background-color: rgba(3, 7, 0, 0.627);
+    width: 180px;
+    height: 10px;
+    padding: 18px;
+}
+
+/*menu bar er moddhe sub-menu-1 div r kaj*/
+.sub-menu-1 {
+    display: none;/*normally visible na howar jnno,jokhon hover ashbe tkhn dekhabe*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;/*new line thke dekhanor jnno*/
+    position: absolute;/*pichoner background likha borabor set korar jnno*/
+    background: rgba(18, 27, 12, 0.627);
+    margin-top: 15px;/*a r element r div ta jate sub-menu r div er vitore na dhuke*/
+    /*margin-left: 15px;*/
+}
+
+.sub-menu-1 ul {
+    display: block;/*a inline tag tai element pashapashi na dekhanor jnno display block*/
+    /* margin: 0px; */
+    padding:0px 0px 0px 0px;
+}
+.sub-menu-1 ul li {
+    width: 180px;
+    height: 70px;
+   /* padding: 2px;*/
+    border-bottom: 1px solid black;/*niche ekta line create korbe*/
+    background: transparent;
+    border-radius: 0;/*kono curve thakbe na*/
+    text-align: center;
+    padding:0px 0px 0px 0px;
+}
+
+.sub-menu-1 ul li:hover{
+    background-color: rgb(52, 54, 52);
+    padding:0px 0px 0px 0px;
+}
+
+.sub-menu-1 ul li a:hover {
+    background: none;
+   /* margin:auto*/
+   padding: 0px 0px 0px 0px;
+   color: rgb(239, 224, 14);
+
+}
+
+
+/*menubar er responsive kaj kore na
+#check {
+    display: none;
+}
+
+.bar label {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:782px) {
+
+    .bar label {
+        display: initial;
+    }
+
+    .menu-bar {
+        padding: 15px;
+    }
+
+    .menu-bar {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(10, 59, 6);
+        border-top: 1px solid rgba(147, 157, 140, 0.627);
+        display: none;
+    }
+
+   .menu-bar ul {
+        width: 100%;
+
+    }
+
+    .menu-bar ul li {
+        width: 100%;
+        position: relative;
+    }
+
+    .sub-menu-1 ul{
+        width: 100%;
+    }
+
+    .sub-menu-1 ul li {
+        background: black;
+        position: relative;
+        width: 100%;
+    }
+
+    #check:checked ~ .menu-bar {
+        display: initial;
+    }
+}*/
+
+/*cover image rakhar dic class*/
+.cover {
+    background-repeat: no-repeat;/*jate pic bar bar na ashe*/
+    padding: 15px;/*charodike 15px bristiti dibe */
+    width: 60%;
+    float: left;
+}
+
+/*cover div er moddhe image er kaj*/
+.cover img {
+    width: 100%;
+}
+
+/*chief div class r kaj*/
+.chief {
+    width: 38%;
+    float: left;/*jate pashapashi cover er pashe thake*/
+}
+
+/*chief div class r moddhe chief-text div r kaj*/
+.chief-text {
+    float: left;
+    width: 70%;
+    font-size: 25px;
+}
+
+/*chief class er chief-pic class r kaj*/
+.chief-pic {
+    float: left;/*jate pashapashi chief-text div er pashe thake*/
+    width: 20%;
+    margin: 18% 0% 0% 7%;
+}
+
+/*chief class er heading tag r kaj*/
+.chief h1 {
+
+    color: rgb(80, 140, 21);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*chief class er p tag r kaj*/
+.chief p {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*chief class er image tag r kaj*/
+.chief img {
+    height: 160px;
+    width: 150px;
+
+}
+
+/*marquee tag use kora muloto scrolling area ante text e*/
+.marquee{
+    margin-top: 500px;/*ager div theke jototuku jaygh nibe*/
+}
+
+/*marquee tag r moddhe a tag use korechi*/
+.marquee a{
+    text-decoration: none;/*jate nicher border ta na ashe*/
+}
+
+/*marquee tag r moddhe p tag use korechi*/
+.marquee p{
+    text-align: center;
+    margin: 0px;
+    color: #dddfcb;
+    font-size: 30px;
+}
+
+/*container r moddhei card er 4ta item thakbe*/
+.container {
+    display: flex;/*pashapashi jate thake card gulo*/
+    width: 1180px;
+    margin: auto;
+    margin-top: 100px;/*upor div hote durutto*/
+}
+
+/*training-tem r class r kaj*/
+.training-items {
+    flex-basis: 25%;/*protekta card joto percent kore nibe(4*25=100)*/
+    background: rgb(54, 66, 56);
+    margin: 10px 10px;/*top-bottom & right-left e margin korbe*/
+    box-shadow: 0px 0px 3px 3px gray;/*top,right,bottom,left e shadow*/
+    padding: 10px 10px;
+   
+}
+
+/*training-tem r class r moddhe Read More button r kaj*/
+.training-items button {
+    background: none;
+    border: none;
+    color: rgb(80, 140, 21);
+    font-size: 20px;
+  
+}
+
+.training-items:hover {
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+
+.container .training-items h3 {
+    color: rgb(80, 140, 21);
+    text-align: center;
+    font-weight: bold;
+}
+
+.container .training-items p {
+    color: antiquewhite;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*screen onushare card gulo column akare hobe*/
+@media only screen and (max-width:640px) 
+{
+    .container {
+        width: 100%;
+        flex-wrap: wrap; /*wrap akare dekhabe*/
+        flex-direction: column; /*column wise */
+    }
+}
+
+/*register-container class r kaj*/
+.register-container{
+max-width: auto;
+padding:28px;
+margin:auto;
+border-radius: 10px;
+overflow: hidden;
+background: rgb(9, 20, 1);
+box-shadow: 0 15px 20px rgba(79, 74, 74, 0.6);
+color: rgb(186, 175, 24);
+margin-top: 100px;
+}
+
+/*Register heading name r jnno*/
+.register-container h2{
+    color: rgb(80, 140, 21);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;/*nicher line r shate gap kototuku hobe ta janabe*/
+    text-align: center;/*text majhe thakbe*/
+    border-bottom: 1px solid silver;/*nicher line kirokom hbe ta janabe*/
+    font-size: 35px;
+}
+
+/*Register er moddhe box gulor majhe faka create korbe*/
+.register-content .input-box{
+    display:flex;/*jate kono bow pashe na ashe*/
+    flex-wrap: wrap;/*jate kono bow pashe na ashe nich borabor thakbe*/
+    width:50%;
+    padding-bottom: 15px;
+}
+
+/* label gulo uporer heading  and gender-title r class r kaj korbe*/
+.register-content .input-box label,.gender-title{
+    width:95%;
+    font-weight:bold;
+    margin:5px 0;
+    font-size: 18px;
+}
+
+/*input box gulor kaj korbe*/
+.input-box input{
+    height: 30px;
+    width:93%;
+    padding:0 10px;
+    border-radius: 5px;
+    border:1px solid gray;
+   background-color: antiquewhite;
+   font-size: 18px;
+}
+
+/*gender-category r class r kaj korbe*/
+.gender-category{
+    padding: 5px 100px 10px 4px;
+}
+
+/*gender-category r vitore element female & male r kaj korbe*/
+.gender-category label{
+    padding: 5px 100px 10px 4px;
+    font-size: 20px;
+}
+
+/*register button upor theke kon position e ache ta dekhabe*/
+.register-button-container{
+    margin:15px 0;/*margin top-bottom=15 & right-left=0*/
+    text-align: center;/*register name k div shoho majhe rakhbe*/
+    padding:17px 4px 5px 6px;
+}
+
+/*register button kivabe thakbe ta dekhabe*/
+.register-button-container button{
+   width:50%;
+   background: rgb(80, 140, 21);
+   font-size: 25px;
+   font-weight: bold;
+   padding:17px 6px;/*upore-niche=17 & dane-baye=6*/
+}
+
+/*register button kivabe thakbe ta dekhabe*/
+.register-button-container button:hover{
+   width:50%;
+   background: rgb(45, 53, 36);
+   color:white;
+}
+
+/*ending section*/
+/*footer section r kaj*/
+footer {
+    bottom: 0px;/*ekdom niche thajbe*/
+    width: 100%;/*puro ongho jure*/
+    background: rgb(54, 66, 56);
+}
+
+/*join-us class r kaj*/
+.join-us {
+    display: flex;/*pashapashi rakhar jonno*/
+}
+
+/*join-us class r moddhe box class r kaj*/
+.join-us .box {
+    flex-basis: 60%;/*prottekta j poriman dokhol korbe*/
+    padding: 10px 20px;
+
+}
+
+/*join-us class r moddhe box class r moddhe h3 kaj*/
+.join-us .box h3 {
+    font-size: 25px;
+    color: rgb(186, 175, 24);
+    font-weight: 600;/*kototuku mota text hobe*/
+    text-transform: uppercase;/*shob text uppercase korbe*/
+}
+
+/*box class r moddhe content class r kaj*/
+.box .content {
+    margin: 20px 0 0 0;
+}
+
+/*join-us likhar content r kaj*/
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+/*join-us likhar content r social icon r anchor tag r kaj*/
+.left .content .social a {
+    padding: 0px 2px;
+    color: gray;
+}
+
+/*facebook,twitter & youtube icon niye kaj*/
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #34262638;
+    color: gray;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+/*social icon gulo jkhn hover hobe*/
+.left .content .social a span:hover {
+    background: gray;
+    color: white;
+}
+
+/*majher map r content r anchor tag*/
+.center .content .place a {
+    padding: 0px 2px;
+    color: gray;
+}
+
+/*map er icon niye kaj */
+.center .content .place a span {
+    height: 40px;
+    width: 40px;
+    background: #34262638;
+    color: gray;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+/*map icon jokhon hover*/
+.center .content .place a span:hover {
+    background: gray;
+    color: white;
+}
+
+/*prottek box class r content r p tag r kaj*/
+.box .content p {
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+/*right box r content email,contact-us r kaj*/
+.right .content .text {
+    font-size: 25px;
+    color: rgb(165, 156, 26);
+    padding:10px 6px;
+}
+
+/*right box r input r kaj*/
+.right .content input {
+    background: rgb(210, 199, 199);
+}
+
+/*right box r textarea r kaj*/
+.right .content textarea {
+    background: rgb(210, 199, 199);
+}
+
+/*right box r button r kaj*/
+.right .content button {
+    background: rgb(210, 199, 199);
+    font-size: 18px;
+}
